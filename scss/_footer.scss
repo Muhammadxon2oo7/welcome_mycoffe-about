@@ -1,0 +1,149 @@
+.footer{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding-top: 44px;
+    position:relative;
+    top: 0;
+    left: 0;
+    background-color: #2C343E;
+    z-index: 10;
+    .container{
+        display: flex;
+        margin-bottom: 44px;
+        align-items: center;
+        
+        nav{
+            margin-left: 10%;
+            display: flex;
+            align-items: center;
+            .collections{
+                display: flex;
+                li{
+                    margin-right: 33px;
+                    a{
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 15px;
+                        letter-spacing: 0.923077px;
+                        text-transform: uppercase;
+                        color: #83888F;
+                        
+                    }
+                    
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    &:hover a{
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 15px;
+                        /* identical to box height, or 125% */
+                        
+                        letter-spacing: 0.923077px;
+                        text-transform: uppercase;
+                        
+                        color: #FEFCF7;  
+                    }
+                    
+                }
+            
+            }
+            
+        }
+        .icons{
+            position: absolute;
+            right:0;
+            width: 20%;
+            font-size: 24px;
+            color: #83888F;
+
+            a{
+                color: #83888F;
+            }
+            .bi-facebook{
+                margin-right: 24px;
+                &:hover{
+                    color:#1877F2;
+                    font-size: 30px;
+                }
+            }
+            .bi-twitter{
+                margin-right: 24px;
+                &:hover{
+                    color: #1877F2;
+                    font-size: 30px;
+                }
+            }
+            .bi-instagram{
+                &:hover{
+                    color: #F60593;
+                    font-size: 30px;
+                }
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width:869px){
+    footer{
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+            .logo{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 33px;
+                img{
+                    display: flex;
+                    justify-content: center;
+                    
+                }
+            }
+            nav{
+                width: 70%;
+                margin-left: 15%;
+                margin-bottom: 65px;
+                padding-left: 0;
+                
+            }
+            .icons{
+                position: relative;
+                bottom: 0;
+                left: 40%;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}
+@media only screen and (max-width:506px){
+    .footer{
+        .container{
+            nav{
+                display: block;
+                width: 100%;
+                margin-left:-18%;
+                .collections{
+                    display: block;
+                    width: 90%;
+                    li{
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 24px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 44px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 44px;
+        align-items: center;
+        nav{
+
+            margin-left: 10%;
+            display: flex;
+            align-items: center;
+            .collections{
+                display: flex;
+                li{
+                    margin-right: 33px;
+                    a{
+                        height: 15px;
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 15px;
+                        letter-spacing: 0.923077px;
+                        color: #83888F;
+                        
+                    }
+                    
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    &:hover a{
+                        height: 15px;
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 15px;
+                        letter-spacing: 0.923077px;
+                        color: #333D4B;    
+                    }
+                    
+                }
+            
+            }
+            i{
+                font-size: 30px;
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:686px){
+    header{
+        .container{
+            .logo{
+                width: 20%;
+            }
+            nav{
+                width: 80%;
+                margin-right: 0;
+                display: flex;
+                justify-content: end;
+                .collections{
+                    li{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width:556px){
+    
+    header{
+        .container{
+
+            .logo{
+                margin-right: 10px;
+            }
+            nav{
+
+                display: flex;
+                align-items: center;
+                position: relative;
+                margin-right: 0;
+                i{
+                    position: absolute;
+                    display: block;
+                    right: 0;
+                }
+
+                .collections{
+                    display: none;
+                    li{
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

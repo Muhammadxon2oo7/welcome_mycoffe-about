@@ -1,0 +1,137 @@
+.works{
+    width: 100%;
+    height: auto;
+    margin-bottom: 200px;
+    .container{
+        .works_title{
+            width: 100%;
+            text-align: start;
+            font-family: 'Fraunces 9pt';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 32px;
+            color: #83888F;
+            margin-bottom: 80px;
+        }
+        .works_cards{
+            width: 100%;
+            display: flex;
+            justify-content:start;
+            flex-wrap: wrap;
+            .works_cards_card{
+                width:23%;
+                height:375px;
+                border-radius: 0px;                
+                margin-right: 95px;
+                .works_cards_card_title{
+                    margin-bottom: 45px;
+                    width: 100%;
+                }
+                .works_cards_card_text{
+                    font-family: 'Fraunces 9pt';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 32px;
+                    color: #333D4B;
+                }
+                .p{
+                    font-family: 'Barlow';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #333D4B;
+                    
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+                // rgba(14, 135, 133, 0.37)
+                // &:hover{
+                //     transition: .6s;
+                //     background-color:#f0f0f3;
+                //     border-radius: 12px;
+                //     box-shadow: 10px 10px 21px #d3d3d6,
+                //                 -10px -10px 21px #ffff;
+                //}
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1938px){
+    .works{
+        margin-top: 300px;
+    }
+}
+
+@media only screen and (max-width:770px){
+    .works{
+        .container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .works_cards{
+                width: 100%;
+                display: flex;
+                justify-content:space-evenly;
+                flex-wrap: wrap;
+                .works_cards_card{
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: 200px;
+                    height: auto;
+                    margin-right: 5px;
+                    margin-bottom: 56px;
+                    .works_cards_card_text{
+                        // width: 100%;
+                        // text-align: left;
+                        font-family: 'Fraunces';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 20px;
+                        color: #333D4B;
+                    }
+                    .p{
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: #333D4B;
+                        p{
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:430px){
+    .works{
+        height: auto;
+        .container{
+            .works_title{
+                width: 100%;
+                text-align: center;
+            }
+            .works_cards{
+                .works_cards_card{
+                    .works_cards_card_title{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                    }
+                    .works_cards_card_text{
+                        text-align: center;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
